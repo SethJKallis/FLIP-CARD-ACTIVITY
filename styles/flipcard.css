@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+    --BORDER: 2px solid #000;
+}
+
+body{
+    background-color: papayawhip;
+}
+
+
+.container{
+    /* border: var(--BORDER); */
+    border-radius: 50%;
+    width: 75vw;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    transition: all 2s ease-in-out 5s;
+}
+
+
+.heading-container{
+    /* border: var(--BORDER); */
+    background-color: #333;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.heading-container h2{
+    color: whitesmoke;
+    transition: all 0.5s ease 0.1s;
+    
+}
+
+.heading-container p{
+    color: whitesmoke;
+    transition: all 0.5s ease 0.1s;
+}
+
+.heading-container p:hover{
+    color: darkblue;
+    font-size: 2rem;
+}
+
+.heading-container h2:hover{
+    color: blueviolet;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.image-container{
+    /* border: var(--BORDER); */
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out 0.25s ;
+}
+
+.image-container:hover{
+    opacity: 0;
+}
+.image{
+    object-fit: cover;
+    min-width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
