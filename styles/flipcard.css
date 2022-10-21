@@ -19,7 +19,7 @@ body{
 .container{
     /* border: var(--BORDER); */
     border-radius: 50%;
-    width: 75vw;
+    width: 550px;
     height: 75vh;
     margin: auto;
     display: flex;
